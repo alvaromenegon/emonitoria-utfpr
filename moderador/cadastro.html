@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="../style.css" rel="stylesheet" type="text/css">
+  <link href="styleMod.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="../script.js"></script>
+  <title>Cadastro - e-Monitoria UTFPR</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="barrasuperior">
+      <img src="anexos/logo_utfpr.png">
+      <a href="login.html">
+        <h1>e-Monitoria UTFPR</h1>
+      </a>
+    </div>
+    <div class="main">
+      <article class="my-3" id="validation">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+          <h3>Cadastro</h3>
+        </div>
+
+        <div>
+          <div class="bd-example">
+            <form class="row g-3">
+              <div class="col-md-5">
+                <label for="validationServer01" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="validationServer01" value="" required>
+                <div class="valid-feedback">
+                  Esse campo é obrigatório!
+                </div>
+              </div>
+              <div class="col-md-5">
+                <label for="validationServer02" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" id="validationServer02" value="" required>
+                <div class="valid-feedback">
+                  Esse campo é obrigatório!
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationServer03" class="form-label">E-mail institucional:</label>
+                <input type="email" class="form-control" id="validationServer03" value="" required>
+                <div class="valid-feedback">
+                  Esse campo é obrigatório!
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationServerUsername" class="form-label" >Nome de Usuário:</label>
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control " id="validationServerUsername"
+                    aria-describedby="inputGroupPrepend3" required>
+                  <div class="invalid-feedback">
+                    Deve conter ao menos 8 caracteres.
+                  </div>
+                </div>
+              </div><div style="height: 1px; margin: 0;"></div>
+              <div class="col-md-6">
+                <label for="validationServer04" class="form-label">Câmpus:</label>
+                <select class="form-select" id="validationServer04" required>
+                  <option selected disabled value="">Selecione um</option>
+                  <option>Apucarana</option>
+                  <option>Campo Mourão</option>
+                  <option>Cornélio Procópio</option>
+                  <option>Curitiba</option>
+                  <option>Dois Vizinhos</option>
+                  <option>Francisco Beltrão</option>
+                  <option>Guarapuava</option>
+                  <option>Londrina</option>
+                  <option>Medianeira</option>
+                  <option>Pato Branco</option>
+                  <option>Ponta Grossa</option>
+                  <option>Santa Helena</option>
+                  <option>Toledo</option>
+                  
+                </select>
+                <div class="invalid-feedback">
+                  Selecione um.
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+                  <label class="form-check-label" for="invalidCheck3">
+                    Concordo com os <a style="color: currentColor;" href="">Termos de Uso</a> desse fórum.
+                  </label>
+                  <div class="invalid-feedback">
+                    Você precisa concordar com os Termos de Uso.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <a href="gerenciamento.html" class="btn btn-primary btn-lg" onclick="alert('Usuario Cadastrado')">Cadastrar</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </article>
+        
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+    <title>Monitorias</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="barrasuperior">
+            <a href="index.html">
+                <h1>e-Monitoria UTFPR</h1>
+            </a>
+            <img src="anexos/logo_utfpr.png">
+        </div>
+        <div class="campus">
+            <p>Câmpus: Dois Vizinhos</p>
+        </div>
+        <div class="menualuno">
+            <ul>
+                    <li><a href="perfil.html">Nome_aluno</a></li>                
+                <a href="pontos.html">
+                    <li>Pontos: 46</li>
+                </a>
+                <li>
+                    <div class="menu_drop">Disciplinas Favoritas
+                        <ul>
+                            <li><a href="progweb1.html">Programação WEB 1</a></li>
+                            <li>Programação WEB 2</li>
+                            <li>Álgebra Linear</li>
+                            <li>Linguagem de Programação</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="atual">Recompensas</li>
+                <li><a class="sair" href="login.html">Sair</a></li>
+            </ul>
+        </div>
+        <div class="main" id="recompensas">
+            <div class="linha1">
+                <div id="foto">
+                    <h3>Nome do Aluno</h3>
+                    <img src="avatar.png" alt="foto_aluno">
+
+                </div>
+                <div class="resumo">
+                    <h4>Nível atual: Calouro</h4>
+                    <label>Progresso no nível atual: 46 </label>
+                    <progress value="46" max="50"> 46/50 </progress>
+                    <label>50.</label>
+                    <h5>Faltam 4 pontos até <span class="nivel">Novato</span>.</h5>
+                </div>
+
+            </div>
+
+            <div class="premios">
+                <h4>Premiações:</h4>
+                <h5>Você não possui recompensas para receber. Alcance o nível <span class="monitor">Monitor</span> para
+                    liberá-las.</h5>
+            </div>
+            <div class="linha2">
+                <div class="regra">
+                    <h4>Regras:</h4>
+                    <h5>Níveis:</h5>
+                    <ul>
+                        <li>Calouro: 0 pontos.</li>
+                        <li>Novato: De 50 até 100 pontos.</li>
+                        <li>Ajudante: De 101 até 150 pontos.</li>
+                        <li>Entusiasta: De 151 até 250 pontos.</li>
+                        <li>Monitor: De 251 até 350 pontos.</li>
+                        <li>Monitor Avançado: De 351 até 450 pontos, e estar entre 10º e 6º dos maiores pontuadores do
+                            mês.
+                        </li>
+                        <li>Mestre: Acima de 451 pontos e estar entre os 5 maiores pontuadores do mês.</li>
+                    </ul>
+                    <h5>Premiações:</h5>
+                    <ul>
+                        <li><b>Calouro:</b> Não aplicável.</li>
+                        <li><b>Novato:</b> Não aplicável.</li>
+                        <li><b>Ajudante:</b> Título <span class="ajudante">"Ajudante"</span> ao lado do nome.</li>
+                        <li><b>Entusiasta:</b> Título <span class="entusiasta">"Entusiasta"</span> ao lado do nome.</li>
+                        <li><b>Monitor:</b></li>
+                        <li>
+                            <ul>
+                                <li>Título <span class="monitor">"Monitor"</span> ao lado do nome.</li>
+                                <li>Auxílio de R$0,50 por resposta acima de 5 pontos realizadas no mês.¹</li>
+                                <li>Recompensa de R$25,00 ao atingir o nível pela primeira vez.</li>
+                            </ul>
+                        </li>
+                        <li><b>Monitor Avançado:</b></li>
+                        <li>
+                            <ul>
+                                <li>Título <span class="monitor">"Monitor Avançado"</span> ao lado do nome.</li>
+                                <li>Auxílio de R$0,55 por resposta acima de 5 pontos realizadas no mês.¹</li>
+                                <li>Recompensa de R$30,00 ao atingir o nível pela primeira vez.</li>
+                            </ul>
+                        </li>
+                        <li><b>Mestre:</b></li>
+                        <li>
+                            <ul>
+                                <li>Título <span class="mestre">"Mestre"</span> ao lado do nome.</li>
+                                <li>Auxílio de R$0,60 por resposta acima de 5 pontos realizadas no mês.¹</li>
+                                <li>Auxílio bônus de R$0,15 pelos pontos totais obtidos no mês.</li>
+                                <li>Recompensa de R$50,00 ao atingir o nível pela primeira vez.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quadro_lideres">
+                    <h4>Quadro de líderes:</h4>
+                    <table>
+                        <tr>
+                            <td><b>Posição</b></td>
+                            <td><b>Aluno</b></td>
+                            <td><b>Pontos</b></td>
+                        </tr>
+                        <tr>
+                            <td>1º</td>
+                            <td>Aluno Mestre Um</td>
+                            <td>XXX</td>
+                        </tr>
+                        <tr>
+                            <td>2º</td>
+                            <td>Aluno Mestre Dois</td>
+                            <td>XXX</td>
+                        </tr>
+                        <tr>
+                            <td>3º</td>
+                            <td>Aluno Mestre Três</td>
+                            <td>XXX</td>
+                        </tr>
+                        <tr>
+                            <td>4º</td>
+                            <td>Aluno Mestre Quatro</td>
+                            <td>XXX</td>
+                        </tr>
+                        <tr>
+                            <td>5º</td>
+                            <td>Aluno Mestre Cinco</td>
+                            <td>XXX</td>
+                        </tr>
+                        <tr>
+                            <td>---</td>
+                            <td> --- </td>
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <td>127º </td>
+                            <td> Nome_Aluno (você)</td>
+                            <td>046</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

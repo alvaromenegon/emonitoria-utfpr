@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../style.css" rel="stylesheet" type="text/css">
+    <link href="styleMod.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="imagex/png" href="anexos/logo_utfpr.ico">
+    <title>e-Monitoria UTFPR</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="barrasuperior">
+            <a href="index.html">
+                <h1>e-Monitoria UTFPR</h1>
+            </a>
+            <img src="anexos/logo_utfpr.png">
+        </div>
+        <div class="campus">
+            <p>Câmpus: Dois Vizinhos</p>
+        </div>
+        <div class="menualuno">
+            <ul>
+                <li> <a href="moderador.html">Nome do Moderador</a></li>
+                <li><a href="gerenciamento.html">Gerenciamento</a></li>
+                <li><a href="aviso.html">Avisos<span class="badge bg-danger">2</span></a></li>
+                <li><a class="sair" href="../login.html">Sair</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="menu-lateral">
+                <div>
+                    <ul>
+                        <h3>CURSOS</h3>
+                        <li><a href="agronomia.html">Agronomia</a></li>
+                        <li><a href="sotfware.html">Bacharelado em Engenharia de Software</a></li>
+                        <li><a href="ebb.html">Engenharia de Bioprocessos e Biotecnologia</a></li>
+                        <li><a href="biologia.html">Licenciatura em Ciências Biológicas</a></li>
+                        <li><a href="zootecnia.html">Zootecnia</a></li>
+                    </ul>
+                </div>
+                <div>
+
+                    <ul id="linksuteis">
+                        <h3>LINKS ÚTEIS</h3>
+
+                        <li> <a href="https://portal.utfpr.edu.br/">Portal UTFPR</a></li>
+                        <li> <a
+                                href="https://sistemas2.utfpr.edu.br/login?returnUrl=%2Fdpls%2Fsistema%2Faluno07%2Fmpmenu.inicio">Portal
+                                do Aluno</a></li>
+                        <li> <a href="https://portal.utfpr.edu.br/">Biblioteca Virtual</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Bem-Vindo, Moderador.</h3>
+                <h4>Buscar Perguntas ou Disciplinas</h4>
+                <form class="d-flex">
+                    
+                    <input class="form-control me-2" type="search" placeholder="Procurar Pergunta ou Disciplina" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Procurar</button>
+                </form>
+                <hr>
+                <h4>Buscar Alunos</h4>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Procurar Aluno" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Procurar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

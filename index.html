@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="imagex/png" href="anexos/logo_utfpr.ico">
+    <title>e-Monitoria UTFPR</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="barrasuperior">
+            <a href="index.html">
+                <h1>e-Monitoria UTFPR</h1>
+            </a>
+            <img src="anexos/logo_utfpr.png">
+        </div>
+        <div class="campus">
+            <p>Câmpus: Dois Vizinhos</p>
+        </div>
+        <div class="menualuno">
+            
+            <ul>
+                <a href="perfil.html">
+                    <li>Nome_aluno</li>
+                </a>
+                <a href="pontos.html">
+                    <li>Pontos: 46</li>
+                </a>
+                <li>
+                    <div class="menu_drop">Disciplinas Favoritas
+                        <ul>
+                            <li><a href="progweb1.html">Programação WEB 1</a></li>
+                            <li>Programação WEB 2</li>
+                            <li>Álgebra Linear</li>
+                            <li>Linguagem de Programação</li>
+                        </ul>
+                    </div>
+                </li>
+                <a href="prizes.html">
+                    <li>Recompensas</li>
+                </a>
+                <li><a class="sair" href="login.html">Sair</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class=menu-lateral>
+                <div>
+                    <ul>
+                        <h2>CURSOS</h2>
+                        <li><input type="button" value="Agronomia" onclick="exibeDisciplinas()"></li>
+                        <li><input type="button" value="Bacharelado em Engenharia de Software"
+                                onclick="exibeDisciplinas()"></li>
+                        <li><input type="button" value="Engenharia de Bioprocessos e Biotecnologia"
+                                onclick="exibeDisciplinas()"></li>
+                        <li><input type="button" value="Engenharia Florestal" onclick="exibeDisciplinas()"></li>
+                        <li><input type="button" value="Licenciatura em Ciências Biológicas"
+                                onclick="exibeDisciplinas()"></li>
+                        <li><input type="button" value="Zootecnia" onclick="exibeDisciplinas()"></li>
+                    </ul>
+                </div>
+                <div>
+
+                    <ul id="linksuteis">
+                        <h3>LINKS ÚTEIS</h3>
+
+                        <li> <a href="https://portal.utfpr.edu.br/">Portal UTFPR</a></li>
+                        <li> <a
+                                href="https://sistemas2.utfpr.edu.br/login?returnUrl=%2Fdpls%2Fsistema%2Faluno07%2Fmpmenu.inicio">Portal
+                                do Aluno</a></li>
+                        <li> <a href="https://portal.utfpr.edu.br/">Biblioteca Virtual</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="h3-float">Escolha o curso</h3>
+            <div id="disciplinas">
+                <div>
+                    <h3>Escolha uma disciplina:</h3>
+                    <select>
+                        <option>--selecione um--</option>
+                        <option>Algebra Linear</option>
+                        <option>Algoritmos 1</option>
+                        <option>Algoritmos 2</option>
+                        <option>Algoritmos e Estrutura de Dados</option>
+                        <option>Linguagem de Programação</option>
+                        <option>Matemática Discreta</option>
+                        <option>Programação WEB 1</option>
+                        <option>Programação WEB 2</option>
+                    </select>
+                    <input type="submit" id="btn-go" value="OK">
+                </div>
+                <h3>Disciplinas em Destaque:</h3>
+                <div>
+                    <div class="boxdestaque">
+                        <div class="destaque-top">
+                            <p><a href="progweb1.html">Programação WEB 1</a></p>
+                            <p class="fav">Favorita</p>
+                        </div>
+                        <div class="box-in">
+                            <h4>Ajuda com a questão ...</h4><label>Postado há 2 horas. 3 respostas</label>
+                            <h4>Lorem, ipsum dolor sit</h4><label>Postado há 3 horas. 4 respostas</label>
+                            <div class="home">
+                                <a href="progweb1.html" class="btn-link">Abrir</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="boxdestaque">
+                        <div class="destaque-top">
+                            <p><a href="algebra.html">Álgebra Linear</a></p><input type="button" value="Favoritar">
+                        </div>
+                        <div class="box-in">
+                            <h4>Ajuda com a questão ...</h4>
+                            <label>Postado há 2 horas. 3 respostas</label>
+                            <h4>Lorem, ipsum dolor sit</h4>
+                            <label>Postado há 3 horas. 4 respostas</label>
+                            <div class="home">
+                                <a href="" class="btn-link">Abrir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxdestaque">
+                        <div class="destaque-top">
+                            <p><a href="">Outra Disciplina</a></p><input type="button" value="Favoritar">
+                        </div>
+                        <div class="box-in">
+                            <h4>Ajuda com a questão ...</h4><label>Postado há 2 horas. 3 respostas</label>
+                            <h4>Lorem, ipsum dolor sit</h4><label>Postado há 3 horas. 4 respostas</label>
+                            <div class="home">
+                                <a href="" class="btn-link">Abrir</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
